@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Theme Selector</title>
+    <script src="Content/theme.js"></script>
+  </head>
+  <body>
+    <h1 class="sample-selector">Theme Selector Works!!!</h1>
+    <p class="sample-para">It can be applied on all CSS properties</p>
+    <script>
+       var eventThemeColor = '#D83B01';
+        $(document).ready(function () {
+            var themeOptions = {
+                    eventColor: eventThemeColor,
+                    propertyAndElementList: [
+                        {
+                            property: 'color',
+                            selector: ['.sample-selector']
+                        },
+                        {
+                            property: 'background-color',
+                            selector: ['.sample-para']
+                        }
+                    ],
+                    dynamicClassesToAdd: ['#playlist .nav-tabs {color:'
+                        + eventThemeColor + ' !important;border-color:' + eventThemeColor
+                        + ' !important;}']
+                };
+                var theme = themeSelector(themeOptions);
+                theme.applyTheme();
+        });
+    </script>
+  </body>
+</html>
