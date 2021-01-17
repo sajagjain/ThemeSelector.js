@@ -1,6 +1,8 @@
 # ThemeSelector.js
 This is a simple JS plugin to apply theme to your pages by specifying a color and the selectors
 
+[View Demo](https://sajagjain.github.io/ThemeSelector.js/Info)
+
 ## How to use:
 You can use this plugin by including the ThemeSelector.js file in the project. Invocation is as easy as the code below
 
